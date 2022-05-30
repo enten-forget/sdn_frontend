@@ -1,11 +1,7 @@
 <template>
   <div>
     <div>
-<<<<<<< HEAD
       <v-simple-table>
-=======
-      <table>
->>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
         <thead>
           <tr>
             <th>dpid(点击dpid可查看交换机中的流表)</th>
@@ -25,11 +21,7 @@
             <th>当前拓扑共有：{{ dpid.length }}台交换机</th>
           </tr>
         </tbody>
-<<<<<<< HEAD
       </v-simple-table>
-=======
-      </table>
->>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
     </div>
     <v-btn class="ma-2" color="primary" @click="getdpid"
     >提交</v-btn

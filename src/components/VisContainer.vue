@@ -36,19 +36,11 @@
 
 <script>
 import LoadingSpinner from "@/components/LoadingSpinner";
-<<<<<<< HEAD
 import RectangularSelection from "../views/Export/components/vis/RectangularSelection";
 import VisCanvas from "../views/Export/components/vis/VisCanvas";
 import deselectHandler from "../views/Export/components/vis/deselectHandler";
 import { v4 as randomUUID } from "uuid";
 import { compare, compareNodes } from "../views/Export/components/vis/locale";
-=======
-import RectangularSelection from "./vis/RectangularSelection";
-import VisCanvas from "./vis/VisCanvas";
-import deselectHandler from "./vis/deselectHandler";
-import { v4 as randomUUID } from "uuid";
-import { compare, compareNodes } from "./vis/locale";
->>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
 import { mapGetters } from "vuex";
 import { dark, selection as selectionTheme } from "@/utils/theme";
 

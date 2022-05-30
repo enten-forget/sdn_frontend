@@ -28,17 +28,10 @@
 </template>
 
 <script>
-<<<<<<< HEAD
 import ExportSection from "./components/export/ExportSection";
 import ImportSection from "./components/export/ImportSection";
 import LoadingSpinner from "../../components/LoadingSpinner";
 import LogListing from "./components/export/LogListing";
-=======
-import ExportSection from "@/components/export/ExportSection";
-import ImportSection from "@/components/export/ImportSection";
-import LoadingSpinner from "@/components/LoadingSpinner";
-import LogListing from "@/components/export/LogListing";
->>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
 
 export default {
   name: "ExportPage",

@@ -21,10 +21,9 @@ const vuetify = new Vuetify({
   theme: {
     themes: {
       light: vuetifyLight,
-
-      dark: vuetifyDark,
+      dark: vuetifyDark
     },
-    dark,
+    dark
   },
   icons: {
     iconfont: "mdi",
@@ -44,9 +43,9 @@ const vuetify = new Vuetify({
       "net-host": "mdi-laptop",
       "net-label": "mdi-label",
       "net-port": "mdi-ethernet",
-      "net-switch": "mdi-switch",
-    },
-  },
+      "net-switch": "mdi-switch"
+    }
+  }
 });
 
 Vue.use(Vuelidate);
@@ -65,5 +64,5 @@ new Vue({
   store,
   vuetify,
 
-  render: (h) => h(App),
+  render: (h) => h(App)
 });

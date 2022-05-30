@@ -2,18 +2,18 @@
   <div class="canvas-container">
     <LoadingSpinner v-if="loading !== false" />
     <template v-else>
-      <!--      <template class="opera-btn">-->
-      <!--        <v-navigation-drawer-->
-      <!--          absolute-->
-      <!--          right-->
-      <!--          hide-overlay-->
-      <!--          permanent-->
-      <!--          stateless-->
-      <!--          temporary-->
-      <!--          style="width: 200px"-->
-      <!--        >-->
-      <!--        </v-navigation-drawer>-->
-      <!--      </template>-->
+<!--      <template class="opera-btn">-->
+<!--        <v-navigation-drawer-->
+<!--          absolute-->
+<!--          right-->
+<!--          hide-overlay-->
+<!--          permanent-->
+<!--          stateless-->
+<!--          temporary-->
+<!--          style="width: 200px"-->
+<!--        >-->
+<!--        </v-navigation-drawer>-->
+<!--      </template>-->
       <template class="ryu">
         <v-navigation-drawer
           v-model="showPanel"
@@ -39,7 +39,7 @@
               class="ma-4"
               right
               @click.stop="showPanel = !showPanel"
-            >CLOSE
+              >CLOSE
             </v-btn>
           </template>
         </v-navigation-drawer>

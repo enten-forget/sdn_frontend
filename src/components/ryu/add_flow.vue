@@ -1,11 +1,7 @@
 <template>
   <div>
     <div>
-<<<<<<< HEAD
       <label>添加流表项</label>
-=======
-      <label for="name">添加流表项</label>
->>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
       <div>
         <textarea
           v-model="flow"

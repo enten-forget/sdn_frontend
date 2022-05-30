@@ -16,17 +16,12 @@ const metadata = [
   { attr: "globalStopCmds", name: "Run global shutdown commands" },
   { attr: "nodeStopCmds", name: "Run node shutdown commands" },
   { attr: "finish", name: "Finish" },
-<<<<<<< HEAD
   { attr: "log", name: "Log", silent: true }
-=======
-  { attr: "log", name: "Log", silent: true },
->>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
 ];
 
 export default class {
   constructor() {
     this.imports = [
-<<<<<<< HEAD
       // "from mininet.cli import CLI",
       // "from mininet.net import Mininet",
       // "import mininet.link",
@@ -46,21 +41,6 @@ export default class {
     this.finish = [
       // "net.stop()"
     ];
-=======
-      "from mininet.cli import CLI",
-      "from mininet.net import Mininet",
-      "import mininet.link",
-      "import mininet.log",
-      "import mininet.node",
-    ];
-    this.init = [
-      () => `net = Mininet(${this.mininetArgs.join(", ")})`,
-      "cli = CLI(net, script='/dev/null')",
-    ];
-    this.build = ["net.build()"];
-    this.cli = ["cli.run()"];
-    this.finish = ["net.stop()"];
->>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
 
     // Init empty arrays
     metadata.forEach(({ attr }) => {
@@ -74,17 +54,12 @@ export default class {
       "build=False",
       "controller=mininet.node.RemoteController",
       "link=mininet.link.TCLink",
-<<<<<<< HEAD
       "topo=None"
-=======
-      "topo=None",
->>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
     ];
   }
 
   toString() {
     const code = [];
-<<<<<<< HEAD
     metadata.forEach(({ attr }) => {
       const arr = this[attr].map((v) => (v.apply ? v.apply() : v));
       if (arr.length) {
@@ -106,31 +81,6 @@ export default class {
       // "",
       // "# vim:fdm=marker",
       // "",
-=======
-    metadata.forEach(({ attr, name, silent }) => {
-      const arr = this[attr].map((v) => (v.apply ? v.apply() : v));
-
-      if (arr.length) {
-        code.push(
-          `# ${name} {{{`,
-          "",
-          ...(silent ? [] : [`mininet.log.info('\\n*** ${name}\\n')`, ""]),
-          ...arr,
-          "",
-          "# }}}"
-        );
-      }
-    });
-
-    return [
-      "#!/usr/bin/env python2",
-      "# -*- coding: utf-8 -*-",
-      "",
-      ...code,
-      "",
-      "# vim:fdm=marker",
-      "",
->>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
     ].join("\n");
   }
 }

@@ -2,11 +2,7 @@ import JsPDF from "jspdf";
 import "jspdf-autotable";
 
 import Items from "./Items";
-<<<<<<< HEAD
 import { compare } from "@/views/Export/components/vis/locale";
-=======
-import { compare } from "@/components/vis/locale";
->>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
 import { vuetify as theme } from "@/utils/theme";
 
 function compareEntries([a], [b]) {
