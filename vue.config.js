@@ -1,5 +1,5 @@
 const webpack = require("webpack");
-const { execSync } = require("child_process");
+// const { execSync } = require("child_process");
 
 // process.env.VUE_APP_BUILD_DATE = new Date().toISOString();
 // process.env.VUE_APP_BUILD_COMMIT_HASH = execSync("git log -1 --format=%H", {
@@ -51,11 +51,7 @@ module.exports = {
 
   pwa: {
     msTileColor: "#009688",
-<<<<<<< HEAD
-    name: "基于SDN的拓扑管理系统",
-=======
     name: "Mininet Editor",
->>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
     themeColor: "#009688",
     workboxPluginMode: "GenerateSW",
   },
