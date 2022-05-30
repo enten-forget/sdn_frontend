@@ -29,10 +29,7 @@
     "antlr4": "4.9.3",
     "chai": "4.3.6",
     "css-loader": "6.7.1",
-<<<<<<< HEAD
     "echarts": "^4.9.0",
-=======
->>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
     "eslint": "8.15.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-cypress": "2.12.1",
