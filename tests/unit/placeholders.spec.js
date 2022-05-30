@@ -1,6 +1,10 @@
 import { expect } from "chai";
 
+<<<<<<< HEAD
 import placeholders from "@/views/Export/components/vis/placeholders";
+=======
+import placeholders from "@/components/vis/placeholders";
+>>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
 import { controllerTypesMap, switchTypesMap } from "@/components/selects";
 
 describe("Placeholders", () => {

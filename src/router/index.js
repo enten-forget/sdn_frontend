@@ -2,11 +2,19 @@ import Router from "vue-router";
 import Vue from "vue";
 import store from "@/store";
 
+<<<<<<< HEAD
 import AboutPage from "@/views/About";
 import CanvasPage from "@/views/Canvas";
 import TopologyToolbar from "@/components/TopologyToolbar";
 import ExportPage from "@/views/Export";
 import HomePage from "@/views/Home";
+=======
+import AboutPage from "@/views/AboutPage";
+import CanvasPage from "@/views/Canvas";
+import TopologyToolbar from "@/components/TopologyToolbar";
+import ExportPage from "@/views/Export";
+import HomePage from "@/views/HomePage";
+>>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
 import MininetSettingsPage from "@/views/MininetSettings";
 
 Vue.use(Router);
@@ -31,7 +39,11 @@ function createRoutes(mapper = (v) => v) {
       path: "/home",
       name: "Home",
       meta: {
+<<<<<<< HEAD
         title: "主页",
+=======
+        title: "Home",
+>>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
         drawer: true,
         icon: "mdi-home",
       },
@@ -41,7 +53,11 @@ function createRoutes(mapper = (v) => v) {
       path: "/canvas",
       name: "Canvas",
       meta: {
+<<<<<<< HEAD
         title: "编辑拓扑图",
+=======
+        title: "Canvas",
+>>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
         drawer: true,
         icon: "mdi-map",
       },
@@ -84,7 +100,11 @@ function createRoutes(mapper = (v) => v) {
       path: "/mininet_settings",
       name: "Mininet settings",
       meta: {
+<<<<<<< HEAD
         title: "拓扑设置",
+=======
+        title: "Mininet Settings",
+>>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
         drawer: true,
         icon: "mdi-tune",
       },
@@ -97,7 +117,11 @@ function createRoutes(mapper = (v) => v) {
       path: "/export",
       name: "Export",
       meta: {
+<<<<<<< HEAD
         title: "导入/导出拓扑",
+=======
+        title: "Export/Import",
+>>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
         drawer: true,
         icon: "mdi-content-save",
       },
@@ -148,7 +172,11 @@ function createRoutes(mapper = (v) => v) {
       path: "/about",
       name: "About",
       meta: {
+<<<<<<< HEAD
         title: "关于",
+=======
+        title: "About",
+>>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
         drawer: true,
         icon: "mdi-information",
       },

@@ -3,18 +3,28 @@
     <template v-if="isView !== true">
       <v-app-bar color="primary" dark app extension-height="7">
         <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+<<<<<<< HEAD
         <!--title start-->
+=======
+>>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
         <v-toolbar-title
           style="font-weight: 300; font-size: 24px; letter-spacing: unset"
           v-text="appName"
         />
         <v-spacer />
+<<<<<<< HEAD
+=======
+
+>>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
         <v-slide-y-transition mode="out-in">
           <router-view name="toolbar" />
         </v-slide-y-transition>
 
+<<<<<<< HEAD
         <!--title end-->
 
+=======
+>>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
         <v-progress-linear
           v-show="progress.show"
           slot="extension"

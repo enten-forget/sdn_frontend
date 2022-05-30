@@ -1,8 +1,12 @@
 <template>
   <div>
     <div>
+<<<<<<< HEAD
       <v-simple-table>
         <thead>
+=======
+      <table><thead>
+>>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
           <tr>
             <th>dpid(点击交换机即可删除)</th>
           </tr>
@@ -18,10 +22,17 @@
             <th>当前拓扑共有：{{ dpid.length }}台交换机</th>
           </tr>
         </tbody>
+<<<<<<< HEAD
       </v-simple-table>
     </div>
     <a class="ma-2 grey--text" @click="getdpid"
     >刷新</a
+=======
+      </table>
+    </div>
+    <v-btn class="ma-2 white--text" color="blue-grey" @click="getdpid"
+    >刷新</v-btn
+>>>>>>> 664a7fb6441ccedb2110b813b3688f54fdc67c6b
     >
   </div>
 </template>
