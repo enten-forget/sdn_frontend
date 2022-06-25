@@ -78,9 +78,6 @@ export default {
     drawer: true,
     appName: "Mininet Editor",
   }),
-  created() {
-    console.log(this.$router.options.routes);
-  },
   computed: {
     documentTitle() {
       const { title, subtitle } = this.$route.meta;
@@ -131,6 +128,9 @@ export default {
       },
       deep: true,
     },
+  },
+  created() {
+    console.log(this.$router.options.routes);
   },
   mounted() {
     this.updateDocumentTitle();

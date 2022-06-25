@@ -13,8 +13,7 @@
             <router-link
               :to="{ name: 'watchflow', params: { id: id } }"
               class="link"
-            ><th>{{ id }}</th>
-
+              ><th>{{ id }}</th>
             </router-link>
           </tr>
           <tr>
@@ -23,9 +22,7 @@
         </tbody>
       </v-simple-table>
     </div>
-    <v-btn class="ma-2" color="primary" @click="getdpid"
-    >提交</v-btn
-    >
+    <v-btn class="ma-2" color="primary" @click="getdpid">提交</v-btn>
   </div>
 </template>
 

@@ -9,7 +9,11 @@
           <v-btn class="ma-2" color="primary" :to="{ name: 'watchtopo' }" small>
             查看当前拓扑图</v-btn
           >
-          <v-btn class="ma-2" color="primary" :to="{ name: 'watchrouter' }" small
+          <v-btn
+            class="ma-2"
+            color="primary"
+            :to="{ name: 'watchrouter' }"
+            small
             >查看拓扑中的交换机与流表</v-btn
           >
           <v-btn class="ma-2" color="primary" :to="{ name: 'add_flow' }" small
@@ -18,10 +22,18 @@
         </div>
 
         <div class="d-flex justify-space-around">
-          <v-btn class="ma-2" color="primary" :to="{ name: 'add_flow_by_file' }" small
+          <v-btn
+            class="ma-2"
+            color="primary"
+            :to="{ name: 'add_flow_by_file' }"
+            small
             >以文件形式提交流表项</v-btn
           >
-          <v-btn class="ma-2" color="primary" :to="{ name: 'delete_flow_by_id' }" small
+          <v-btn
+            class="ma-2"
+            color="primary"
+            :to="{ name: 'delete_flow_by_id' }"
+            small
             >删除指定交换机的所有流表</v-btn
           >
           <!--          <v-btn :to="{ name: 'default_route' }" small>返回</v-btn>-->

@@ -16,7 +16,7 @@ const metadata = [
   { attr: "globalStopCmds", name: "Run global shutdown commands" },
   { attr: "nodeStopCmds", name: "Run node shutdown commands" },
   { attr: "finish", name: "Finish" },
-  { attr: "log", name: "Log", silent: true }
+  { attr: "log", name: "Log", silent: true },
 ];
 
 export default class {
@@ -30,11 +30,9 @@ export default class {
     ];
     this.init = [
       () => `net = Mininet(${this.mininetArgs.join(", ")})`,
-      "cli = CLI(net, script='/dev/null')"
+      "cli = CLI(net, script='/dev/null')",
     ];
-    this.build = [
-      "net.build()"
-    ];
+    this.build = ["net.build()"];
     this.cli = [
       // "cli.run()"
     ];
@@ -54,7 +52,7 @@ export default class {
       "build=False",
       "controller=mininet.node.RemoteController",
       "link=mininet.link.TCLink",
-      "topo=None"
+      "topo=None",
     ];
   }
 
@@ -77,7 +75,7 @@ export default class {
       // "#!/usr/bin/env python2",
       // "# -*- coding: utf-8 -*-",
       // "",
-      ...code
+      ...code,
       // "",
       // "# vim:fdm=marker",
       // "",

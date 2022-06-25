@@ -1,6 +1,8 @@
 <template>
   <v-container>
-    <echarts-radar></echarts-radar>
+    <v-card>
+      <echarts-radar></echarts-radar>
+    </v-card>
     <echarts-gauge></echarts-gauge>
   </v-container>
 </template>

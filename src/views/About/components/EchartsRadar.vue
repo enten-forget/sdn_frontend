@@ -15,34 +15,36 @@ export default {
       this.chart = this.$echarts.init(document.getElementById("radar"));
       const option = {
         title: {
-          text: "Basic Radar Chart",
+          text: "Multiple Radar",
         },
-        legend: {
-          data: ["Allocated Budget", "Actual Spending"],
+        tooltip: {
+          trigger: "axis",
         },
-        radar: {
-          // shape: 'circle',
-          indicator: [
-            { name: "Sales", max: 6500 },
-            { name: "Administration", max: 16000 },
-            { name: "Information Technology", max: 30000 },
-            { name: "Customer Support", max: 38000 },
-            { name: "Development", max: 52000 },
-            { name: "Marketing", max: 25000 },
-          ],
-        },
+        radar: [
+          {
+            indicator: [
+              { text: "Look", max: 100 },
+              { text: "Photo", max: 100 },
+              { text: "System", max: 100 },
+              { text: "Performance", max: 100 },
+              { text: "Screen", max: 100 },
+              { text: "Screen", max: 100 },
+            ],
+            radius: 80,
+            center: ["50%", "60%"],
+          },
+        ],
         series: [
           {
-            name: "Budget vs spending",
             type: "radar",
+            tooltip: {
+              trigger: "item",
+            },
+            areaStyle: {},
             data: [
               {
-                value: [4200, 3000, 20000, 35000, 50000, 18000],
-                name: "Allocated Budget",
-              },
-              {
-                value: [5000, 14000, 28000, 26000, 42000, 21000],
-                name: "Actual Spending",
+                value: [60, 73, 85, 40, 64, 12],
+                name: "A Software",
               },
             ],
           },

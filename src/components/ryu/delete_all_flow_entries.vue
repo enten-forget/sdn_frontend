@@ -20,9 +20,7 @@
         </tbody>
       </v-simple-table>
     </div>
-    <a class="ma-2 grey--text" @click="getdpid"
-    >刷新</a
-    >
+    <a class="ma-2 grey--text" @click="getdpid">刷新</a>
   </div>
 </template>
 

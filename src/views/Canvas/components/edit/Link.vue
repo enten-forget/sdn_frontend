@@ -79,7 +79,12 @@
 <script>
 import common from "./common";
 import errors from "@/utils/validation/errors";
-import { timeWithUnit, integer, minValue, between } from "@/utils/validation/rules";
+import {
+  timeWithUnit,
+  integer,
+  minValue,
+  between,
+} from "@/utils/validation/rules";
 
 export default {
   name: "LinkEdit",
