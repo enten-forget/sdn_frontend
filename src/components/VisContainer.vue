@@ -16,7 +16,8 @@
         :style="{ left: mouseTag.x + 'px', top: mouseTag.y + 'px' }"
         class="mouse-tag"
       >
-        <v-icon color="black" v-text="mouseTagIcon" />
+<!--        <v-icon color="black" v-text="mouseTagIcon" />-->
+        <span :class="mouseTagIcon"></span>
       </div>
 
       <v-snackbar
@@ -154,7 +155,7 @@ export default {
       return this.$store.state.loading;
     },
     mouseTagIcon() {
-      return "$vuetify.icons.net-" + this.newItem.type;
+      return "iconfont icon-" + this.newItem.type;
     },
   },
   mounted() {

@@ -77,7 +77,8 @@
                         data-cy="fab-port"
                         @click="$refs.vis.addPort()"
                       >
-                        <v-icon>$vuetify.icons.net-port</v-icon>
+                        <!--                        <v-icon>$vuetify.icons.net-port</v-icon>-->
+                        <span class="iconfont icon-port"></span>
                       </v-btn>
                       <p class="ma-0 font-weight-thin text-sm-body-2">端口</p>
                     </div>
@@ -91,7 +92,8 @@
                         data-cy="fab-host"
                         @click="$refs.vis.addHost()"
                       >
-                        <v-icon>$vuetify.icons.net-host</v-icon>
+                        <!--                        <v-icon>$vuetify.icons.net-host</v-icon>-->
+                        <span class="iconfont icon-host"></span>
                       </v-btn>
                       <p class="ma-0 font-weight-thin text-sm-body-2">主机</p>
                     </div>
@@ -103,7 +105,8 @@
                         data-cy="fab-switch"
                         @click="$refs.vis.addSwitch()"
                       >
-                        <v-icon>$vuetify.icons.net-switch</v-icon>
+                        <!--                        <v-icon>$vuetify.icons.net-switch</v-icon>-->
+                        <span class="iconfont icon-switch"></span>
                       </v-btn>
                       <p class="ma-0 font-weight-thin text-sm-body-2">交换机</p>
                     </div>
@@ -117,7 +120,8 @@
                         data-cy="fab-controller; margin: 3px"
                         @click="$refs.vis.addController()"
                       >
-                        <v-icon>$vuetify.icons.net-controller</v-icon>
+                        <!--                        <v-icon>$vuetify.icons.net-controller</v-icon>-->
+                        <span class="iconfont icon-controller"></span>
                       </v-btn>
                       <p class="ma-0 font-weight-thin text-sm-body-2">控制器</p>
                     </div>
@@ -129,7 +133,8 @@
                         data-cy="fab-dummy"
                         @click="$refs.vis.addDummy()"
                       >
-                        <v-icon>$vuetify.icons.net-label</v-icon>
+                        <!--                        <v-icon>$vuetify.icons.net-label</v-icon>-->
+                        <span class="iconfont icon-dummy"></span>
                       </v-btn>
                       <p class="ma-0 font-weight-thin text-sm-body-2">标签</p>
                     </div>
@@ -184,6 +189,7 @@ import exporter from "@/utils/exporter";
 import Builder from "@/builder";
 import { mapGetters } from "vuex";
 import Ryu from "./components/Ryu";
+import "../../assets/icon/iconfont.css";
 
 function download(filename, mimeOrHref, data) {
   const href =
